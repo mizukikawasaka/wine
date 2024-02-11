@@ -1,0 +1,20 @@
+<div class="q_01">
+      <h1>Q1</h1>
+      <h2>洋食と和食どちらが好き？</h2>
+      <ul>
+        <li><a class="btn" href="#q_02" data-value="a">
+        <%= link_to shindans_new2A_path do %>
+            <%= image_tag 'plate.image1.webp', size: '200x200' %>
+           <% end %>
+            <p><%= link_to '洋食', shindans_new2A_path %></p>
+            
+          </a></li>
+        <li><a class="btn" href="#q_02" data-value="b">
+        <%= link_to shindans_new2B_path do %>
+            <%= image_tag 'image2.jpg', size: '200x200' %>
+           <% end %>
+            <p><%= link_to '和食', shindans_new2B_path %></p>
+          </a></li>
+        
+      </ul>
+</div>

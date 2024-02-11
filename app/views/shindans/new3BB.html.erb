@@ -1,0 +1,22 @@
+<div class="q_01">
+      <h3>03</h3>
+      <h4>食べたいのは？</h4>
+      <ul>
+        <li><a class="btn" href="#q_02" data-value="a">
+        <%= link_to shindans_show7_path do %>
+            <%= image_tag 'plat10.jpg', size: '200x200' %>
+           <% end %>
+            <p><%= link_to '白身魚の天ぷら', shindans_show7_path %></p>
+            
+          </a></li>
+        <li><a class="btn" href="#q_02" data-value="b">
+        <%= link_to shindans_show8_path do %>
+            <%= image_tag 'plat11.jpg', size: '200x200' %>
+           <% end %>
+            <p><%= link_to '豚の角煮・魚の煮付', shindans_show8_path %></p>
+          </a></li>
+        
+      </ul>
+</div>
+
+<%= link_to '戻る', shindans_new2B_path %>

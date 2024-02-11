@@ -1,0 +1,159 @@
+// Place all the styles related to the shindans controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+//ヘッダー
+  header {
+    background-color: #862040;
+    height: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+  }
+  header h1 {
+    color: #FFFFFF;
+    margin-left: 20px;
+  }
+  .header-list {
+    display: flex;
+    align-items: center;
+  }
+  header ul {
+    display: flex;
+  }
+  header li {
+    list-style: none;
+    margin-right: 40px;
+  }
+
+//トップページ
+.maintop-img{
+  background-image: url('wine6.jpg');
+  background-position: center center; /* 画像を中央に配置 */
+  background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+  background-repeat: no-repeat; 
+  height: 600px;
+}
+.top{
+  background-color: #862040;
+  height:100px;
+}
+.abouttop{
+  background-image: url('wine5.jpg');
+  background-position: center center; /* 画像を中央に配置 */
+  background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+  background-repeat: no-repeat; 
+  height: 300px;
+  border:1px solid #8a8a8a;
+}
+
+.abouttop h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  display: flex; /* Flexboxコンテナを使用 */
+  justify-content: center; /* 要素を水平方向に中央に配置 */
+  align-items: center; /* 要素を垂直方向に中央に配置 */
+}
+.logo-image1{
+  width: 100%;
+  height: 300px;
+}
+.text-overlay1 {
+  position: absolute; /* 絶対位置指定 */
+  top: 50%; /* 上端を要素の中央に配置 */
+  left: 50%; /* 左端を要素の中央に配置 */
+  transform: translate(-50%, -50%); /* 要素を中央に配置 */
+  background-color: rgba(255, 255, 255, 0.7); /* 背景色を設定（任意） */
+  padding: 10px; /* テキストと境界の間に余白を追加（任意） */
+}
+.winetop-block{
+    background-position: center center; /* 画像を中央に配置 */
+    background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+    background-repeat: no-repeat; 
+    height: 300px;
+    border:1px solid #8a8a8a;
+}
+.winetop-block h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  display: flex; /* Flexboxコンテナを使用 */
+  justify-content: center; /* 要素を水平方向に中央に配置 */
+  align-items: center; /* 要素を垂直方向に中央に配置 */
+}
+.firsttop-block{
+    background-image: url('wine4.jpg');
+    background-position: center center; /* 画像を中央に配置 */
+    background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+    background-repeat: no-repeat; 
+    height: 300px;
+    border:1px solid #8a8a8a;
+}
+.firsttop-block h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  display: flex; /* Flexboxコンテナを使用 */
+  justify-content: center; /* 要素を水平方向に中央に配置 */
+  align-items: center; /* 要素を垂直方向に中央に配置 */
+}
+.secondtop-block{
+  background-image: url('wine7.jpg');
+    background-position: center center; /* 画像を中央に配置 */
+    background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+    background-repeat: no-repeat; 
+    height: 300px;
+    border:1px solid #8a8a8a;
+}
+.secondtop-block h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  display: flex; /* Flexboxコンテナを使用 */
+  justify-content: center; /* 要素を水平方向に中央に配置 */
+  align-items: center; /* 要素を垂直方向に中央に配置 */
+}
+
+
+//診断ページ
+.q_01 {
+    text-align: center;
+}
+.q_01 h1{
+      text-align: center;
+      color: #220000;
+      font-family: sans-serif;
+      font-size: 30px;
+}
+.q_01 h2{
+    text-align: center;
+    color: #220000;
+}
+.q_01 ul{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.q_01 li{
+  border: solid;
+  border-color: #8a8a8a;
+  padding: 5%;
+  border-radius: 50px;
+}
+.show h1{
+  font-size: 40px;
+}
+.show ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}

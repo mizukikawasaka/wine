@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mizuki</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+  <h1><%= link_to "Wine", shindans_top_path %></h1>
+  
+  <div class="header-list">
+  <ul>
+    <li><%= link_to "About me",shindans_index1_path %></li>
+    <li><%= link_to "ワインの知識",shindans_index3_path %></li>
+    <li><%= link_to "ワイン診断",shindans_path %></li>
+    <li><%= link_to "おすすめワイン",shindans_index2_path %></li>
+    <li><%= link_to "",shindans_path %></li>
+  </ul>
+  </div>
+  </header>
+<main>
+  <%= yield %>
+</main>
+  </body>
+</html>
