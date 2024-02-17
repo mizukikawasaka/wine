@@ -1,0 +1,22 @@
+databases:
+  - name: wine_DB
+    databaseName: wine_db_lzfk
+    user: wine
+    region: singapore
+
+services:
+  - type: web
+    name: wine
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: wine_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+

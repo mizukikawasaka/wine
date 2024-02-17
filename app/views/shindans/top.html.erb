@@ -1,28 +1,45 @@
-  <div class="maintop-img">
-  </div>
-  <div class="top">
-  </div>
-
-  <div class="abouttop">
-    <%= link_to shindans_index1_path do %>
-    <%= image_tag 'wine5.jpg', class:"logo-image1" %>
-    <% end %>
+<div class="maintop">
+  <div class="maintop-img"></div>
+  <div class="maintop-overlay-box">
+    <div class="maintop-text">
+      Vendange
     </div>
-
-  <div class="winetop-block">
-  <%= link_to shindans_index3_path do %>
-    <%= image_tag 'wine8.jpg', class:"logo-image1" %>
-    <% end %>
   </div>
+</div>
 
-  <div class="firsttop-block">
-  <%= link_to shindans_path do %>
-    <%= image_tag 'wine4.jpg', class:"logo-image1" %>
-    <% end %>
-  </div> 
 
-  <div class="secondtop-block">
-  <%= link_to shindans_index2_path do %>
-    <%= image_tag 'wine7.jpg', class:"logo-image1" %>
-    <% end %>
-  </div>
+<div class="blank1">
+</div>
+
+
+<div class="abouttop">
+  <a href="<%= shindans_index1_path %>" class="background-link1">
+    <div class="text-overlay1">
+      <h1>About Me</h1>
+    </div>
+  </a>
+</div>
+
+<div class="winetop-block">
+  <a href="<%= shindans_index3_path %>" class="background-link2">
+    <div class="text-overlay2">
+      <h1>ワインの基本</h1>
+    </div>
+  </a>
+</div>
+
+<div class="firsttop-block">
+  <a href="<%= shindans_path %>" class="background-link3">
+    <div class="text-overlay3">
+      <h1>ワイン診断</h1>
+    </div>
+  </a>
+</div> 
+
+<div class="secondtop-block">
+  <a href="<%= shindans_index2_path %>" class="background-link4">
+    <div class="text-overlay4">
+      <h1>おすすめワイン</h1>
+    </div>
+  </a>
+</div>

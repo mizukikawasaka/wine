@@ -1,22 +1,22 @@
-<div class="q_01">
-      <h3>03</h3>
-      <h4>食べたいのは？</h4>
-      <ul>
-        <li><a class="btn" href="#q_02" data-value="a">
+<div class="question">
+  <h1>Q3</h1>
+  <h2>食べたいのは？</h2>
+    <ul>
+      <li><a class="btn" href="#q_02" data-value="a">
         <%= link_to shindans_show1_path do %>
-            <%= image_tag 'plat2.jpg', size: '200x200' %>
-           <% end %>
-            <p><%= link_to '牛肉のトマト煮', shindans_show1_path %></p>
-            
-          </a></li>
-        <li><a class="btn" href="#q_02" data-value="b">
+        <%= image_tag 'plat2.jpg', size: '200x200' %>
+        <% end %>
+        <p><%= link_to '牛肉のトマト煮', shindans_show1_path %></p>
+      </a></li>
+      <li><a class="btn" href="#q_02" data-value="b">
         <%= link_to shindans_show2_path do %>
-            <%= image_tag 'plat1.jpg', size: '200x200' %>
-           <% end %>
-            <p><%= link_to 'オイルソースのパスタ', shindans_show2_path %></p>
-          </a></li>
-        
-      </ul>
+        <%= image_tag 'plat1.jpg', size: '200x200' %>
+        <% end %>
+        <p><%= link_to 'オイルソースのパスタ', shindans_show2_path %></p>
+      </a></li>     
+    </ul>
 </div>
 
-<%= link_to '戻る', shindans_new2A_path %>
+<a href="new2A" class="btn-flat-simple">
+  <i class="fa fa-caret-right"></i> 戻る
+</a>

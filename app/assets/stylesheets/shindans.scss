@@ -6,47 +6,44 @@
     margin: 0;
   }
 
-//ヘッダー
-  header {
-    background-color: #862040;
-    height: 70px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header a {
-    color: #FFFFFF; 
-    text-decoration: none; 
-  }
-  header h1 {
-    color: #FFFFFF;
-    margin-left: 20px;
-  }
-  .header-list {
-    display: flex;
-    align-items: center;
-  }
-  header ul {
-    display: flex;
-  }
-  header li {
-    list-style: none;
-    margin-right: 40px;
-  }
-
 //トップページ
-.maintop-img{
-  background-image: url('wine6.jpg');
-  background-position: center center; /* 画像を中央に配置 */
-  background-size: cover; /* 画像を要素に合わせて拡大縮小 */
-  background-repeat: no-repeat; 
-  height: 600px;
+.maintop {
+  position: relative;
+  width: 100%;
+  height: 600px; /* 背景画像の高さに合わせる */
 }
-.top{
+.maintop-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('wine6.jpg');
+  background-size: cover; /* 画像を要素の大きさに合わせて調整 */
+}
+.maintop-overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a33e3e(0, 0, 0, 0.5); /* ボックスの色と透明度を調整 */
+}
+.maintop-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(53, 36, 36);
+  font-size: 30px;
+  text-align: center;
+}
+.blank1{
   background-color: #862040;
   height:100px;
 }
+
+//About Meに行くページ
 .abouttop{
   background-image: url('wine5.jpg');
   background-position: center center; /* 画像を中央に配置 */
@@ -55,40 +52,57 @@
   height: 300px;
   border:1px solid #8a8a8a;
 }
-
-.abouttop h1{
-  color: #FFFFFF;
-  font-size: 50px;
-  display: flex; /* Flexboxコンテナを使用 */
-  justify-content: center; /* 要素を水平方向に中央に配置 */
-  align-items: center; /* 要素を垂直方向に中央に配置 */
-}
-.logo-image1{
-  width: 100%;
-  height: 300px;
+.background-link1 {
+  display: block;
+  width: 100%; /* 親要素の幅いっぱいにする */
+  height: 300px; /* 適切な高さを設定 */
+  background-size: cover;
+  position: relative;
 }
 .text-overlay1 {
-  position: absolute; /* 絶対位置指定 */
-  top: 50%; /* 上端を要素の中央に配置 */
-  left: 50%; /* 左端を要素の中央に配置 */
-  transform: translate(-50%, -50%); /* 要素を中央に配置 */
-  background-color: rgba(255, 255, 255, 0.7); /* 背景色を設定（任意） */
-  padding: 10px; /* テキストと境界の間に余白を追加（任意） */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* テキストを中央揃え */
+  color: white; /* テキストの色を白に設定（任意） */
+  font-size: 20px;
 }
+.text-overlay1:hover{
+  color: #DBDBDB;
+}
+
+//ワインの基本に行くページ
 .winetop-block{
+    background-image: url('wine8.jpg');
     background-position: center center; /* 画像を中央に配置 */
     background-size: cover; /* 画像を要素に合わせて拡大縮小 */
     background-repeat: no-repeat; 
     height: 300px;
     border:1px solid #8a8a8a;
 }
-.winetop-block h1{
-  color: #FFFFFF;
-  font-size: 50px;
-  display: flex; /* Flexboxコンテナを使用 */
-  justify-content: center; /* 要素を水平方向に中央に配置 */
-  align-items: center; /* 要素を垂直方向に中央に配置 */
+.background-link2 {
+  display: block;
+  width: 100%; /* 親要素の幅いっぱいにする */
+  height: 400px; /* 適切な高さを設定 */
+  background-image: url('photo.jpg');
+  background-size: cover;
+  position: relative;
 }
+.text-overlay2 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* テキストを中央揃え */
+  color: white; /* テキストの色を白に設定（任意） */
+  font-size: 20px;
+}
+.text-overlay2:hover{
+  color: #DBDBDB;
+}
+
+//ワイン診断に行くページ
 .firsttop-block{
     background-image: url('wine4.jpg');
     background-position: center center; /* 画像を中央に配置 */
@@ -97,63 +111,293 @@
     height: 300px;
     border:1px solid #8a8a8a;
 }
-.firsttop-block h1{
-  color: #FFFFFF;
-  font-size: 50px;
-  display: flex; /* Flexboxコンテナを使用 */
-  justify-content: center; /* 要素を水平方向に中央に配置 */
-  align-items: center; /* 要素を垂直方向に中央に配置 */
+.background-link3 {
+  display: block;
+  width: 100%; /* 親要素の幅いっぱいにする */
+  height: 400px; /* 適切な高さを設定 */
+  background-image: url('photo.jpg');
+  background-size: cover;
+  position: relative;
 }
+.text-overlay3 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* テキストを中央揃え */
+  color: white; /* テキストの色を白に設定（任意） */
+  font-size: 20px;
+}
+.text-overlay3:hover{
+  color: #DBDBDB;
+}
+
+//おすすめワインに行くページ
 .secondtop-block{
   background-image: url('wine7.jpg');
-    background-position: center center; /* 画像を中央に配置 */
-    background-size: cover; /* 画像を要素に合わせて拡大縮小 */
-    background-repeat: no-repeat; 
-    height: 300px;
-    border:1px solid #8a8a8a;
+  background-position: center center; /* 画像を中央に配置 */
+  background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+  background-repeat: no-repeat; 
+  height: 300px;
+  border:1px solid #8a8a8a;
 }
-.secondtop-block h1{
-  color: #FFFFFF;
+.background-link4 {
+  display: block;
+  width: 100%; /* 親要素の幅いっぱいにする */
+  height: 300px; /* 適切な高さを設定 */
+  background-image: url('photo.jpg');
+  background-size: cover;
+  position: relative;
+}
+.text-overlay4 {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* テキストを中央揃え */
+  color: white; /* テキストの色を白に設定（任意） */
+  font-size: 20px;
+}
+.text-overlay4:hover{
+  color: #DBDBDB;
+}
+
+//Aboutme
+.aboutme-background{
+  position: relative;
+  width: 100%;
+  height: 100%; /* 背景画像の高さに合わせる */
+  background-image: url('wine10.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.aboutme-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.aboutme-text-overlay h1{
+  font-size: 15px;
+  color: wheat;
+}
+.aboutme-text-overlay h2{
+  font-size: 20px;
+  color: wheat;
+}
+.aboutme-text-overlay p {
+  color: white; /* テキストの色を白に設定 */
+}
+
+//基本知識ページ
+.kihon-background{
+  position: relative;
+  width: 100%;
+  height: 90%; /* 背景画像の高さに合わせる */
+  background-image: url('wine15.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.kihon-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.kihon-text-overlay h1{
   font-size: 50px;
-  display: flex; /* Flexboxコンテナを使用 */
-  justify-content: center; /* 要素を水平方向に中央に配置 */
-  align-items: center; /* 要素を垂直方向に中央に配置 */
+  color: black;
+}
+.kihon{
+  font-size: 20px;
+  text-align: center;
+}
+.kihon h1{
+  text-align: center;
+}
+.kihon1-block ul{
+  display: flex;
+  list-style-type: none; /* リストスタイルを無効にする */
+  justify-content: space-between; /* 要素の間にスペースを均等に分配 */
+}
+.kihon1-block li{
+  width: calc(100% - 0px); /* 2つの要素の間に10pxのスペースを作成 */
+  justify-content: center;
+}
+
+.kihon3-block ul{
+  display: flex;
+  list-style-type: none; /* リストスタイルを無効にする */
+  justify-content: space-between; /* 要素の間にスペースを均等に分配 */
+}
+.kihon3-block li{
+  width: calc(100% - 0px); /* 2つの要素の間に10pxのスペースを作成 */
+  justify-content: center;
+}
+
+//診断ページトップ
+.shindan-background {
+  position: relative;
+  width: 100%;
+  height: 600px; /* 背景画像の高さに合わせる */
+  background-image: url('wine9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.shindan-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.shindan-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 半透明の背景色 */
+}
+.shindan-text-overlay h1{
+  font-size: 13px;
+  color: wheat;
+}
+.shindan-text-overlay h2{
+  font-size: 20px;
+  color: wheat;
+}
+.shindan-text-overlay p {
+  color: white; /* テキストの色を白に設定 */
+}
+
+/*ボタン作ってみた*/
+.btn-border-bottom {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: #c9a333;  
+  font-size: 15px;
+}
+.btn-border-bottom:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 3px;
+  background:#c9a333;
+  transition: .2s;
+}
+.btn-border-bottom:hover:before {
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
 }
 
 
-//診断ページ
-.q_01 {
+/*質問ページ*/
+.question {
     text-align: center;
 }
-.q_01 h1{
-      text-align: center;
-      color: #220000;
-      font-family: sans-serif;
-      font-size: 30px;
-}
-.q_01 h2{
+.question h1{
     text-align: center;
     color: #220000;
+    font-size: 50px;
 }
-.q_01 ul{
+.question h2{
+    text-align: center;
+    color: #220000;
+    font-size: 20px;
+}
+.question p:hover{
+    color: #220000;
+}
+.question ul{
   display: flex;
+  list-style-type: none; /* リストスタイルを無効にする */
   justify-content: center;
-  
+}
+.question li{
+  border:1px solid #8a8a8a;
+  padding: 5%;
+  margin: 1%;
+  border-radius: 50px;
 }
 
-.q_01 li{
-  border: solid;
-  border-color: #8a8a8a;
-  padding: 5%;
-  border-radius: 50px;
+.btn-flat-simple {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #8a8a8a;
+  background: #ECECEC;
+  transition: .4s;
+}
+.btn-flat-simple:hover {
+  background: #862040;
+  color: white;
+}
+
+/*結果ページ*/
+.show{
+  text-align: center;
 }
 .show h1{
   font-size: 40px;
 }
-.show ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 25px;
+.btn-flat-simple {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #8a8a8a;
+  background: #ECECEC;
+  transition: .4s;
+}
+.btn-flat-simple:hover {
+  background: #862040;
+  color: white;
+}
+
+//おすすめワインページ
+.osusume-background{
+  position: relative;
+  width: 100%;
+  height: 90%; /* 背景画像の高さに合わせる */
+  background-image: url('wine16.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.osusume-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.osusume-text-overlay h1{
+  font-size: 45px;
+  color: white;
+}
+.osusume h1{
+  text-align: center;
+}
+.osusume ul{
+  display: flex;
+  list-style-type: none; /* リストスタイルを無効にする */
+  justify-content: center;
+  }
+.osusume li{
+    border:1px solid #8a8a8a;
+    padding: 5%;
+    margin: 1%;
+    text-align: center;
 }

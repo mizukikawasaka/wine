@@ -1,22 +1,22 @@
-<div class="q_01">
-      <h3>03</h3>
-      <h4>食べたいのは？</h4>
-      <ul>
-        <li><a class="btn" href="#q_02" data-value="a">
+<div class="question">
+  <h1>Q3</h1>
+  <h2>食べたいのは？</h2>
+    <ul>
+      <li><a class="btn" href="#q_02" data-value="a">
         <%= link_to shindans_show3_path do %>
-            <%= image_tag 'plat3.jpg', size: '200x200' %>
-           <% end %>
-            <p><%= link_to 'チーズたっぷりグラタン', shindans_show3_path %></p>
-            
-          </a></li>
-        <li><a class="btn" href="#q_02" data-value="b">
+        <%= image_tag 'plat3.jpg', size: '200x200' %>
+        <% end %>
+        <p><%= link_to 'チーズたっぷりグラタン', shindans_show3_path %></p>
+      </a></li>
+      <li><a class="btn" href="#q_02" data-value="b">
         <%= link_to shindans_show4_path do %>
-            <%= image_tag 'plat5.jpg', size: '200x200' %>
-           <% end %>
-            <p><%= link_to 'ガーリックステーキ', shindans_show4_path %></p>
-          </a></li>
-        
-      </ul>
+        <%= image_tag 'plat5.jpg', size: '200x200' %>
+        <% end %>
+        <p><%= link_to 'ガーリックステーキ', shindans_show4_path %></p>
+      </a></li>
+    </ul>
 </div>
 
-<%= link_to '戻る', shindans_new2A_path %>
+<a href="new2A" class="btn-flat-simple">
+  <i class="fa fa-caret-right"></i> 戻る
+</a>
