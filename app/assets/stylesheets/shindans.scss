@@ -324,12 +324,15 @@
   justify-content: center;
 }
 .question li{
+  font-size: 20px;
   border:1px solid #8a8a8a;
   padding: 5%;
   margin: 1%;
   border-radius: 50px;
 }
-
+.linkbox a{
+  color: #220000;
+}
 .btn-flat-simple {
   position: relative;
   display: inline-block;
